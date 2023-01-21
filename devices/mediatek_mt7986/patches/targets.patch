@@ -1,3 +1,5 @@
+--- a/include/target.mk
++++ b/include/target.mk
 @@ -46,28 +46,31 @@ DEFAULT_PACKAGES.router:=\
  	dnsmasq-full \
  	firewall \
