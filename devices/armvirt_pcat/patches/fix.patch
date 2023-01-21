@@ -1,5 +1,5 @@
---- a/target/linux/armvirt/Makefile
-+++ b/target/linux/armvirt/Makefile
+--- a/target/linux/armvirt_pcat/Makefile
++++ b/target/linux/armvirt_pcat/Makefile
 @@ -4,15 +4,15 @@
  
  include $(TOPDIR)/rules.mk
