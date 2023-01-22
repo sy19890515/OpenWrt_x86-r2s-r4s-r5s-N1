@@ -19,3 +19,12 @@
 +DEFAULT_PACKAGES += mkf2fs e2fsprogs blkid pcat-manager -luci-app-gpsysupgrade
  
  $(eval $(call BuildTarget))
+
+--- a/target/imagebuilder/files/Makefile
++++ b/target/imagebuilder/files/Makefile
+@@ -141,5 +141,4 @@
+ 	$(MAKE) -s checksum
+ 	rm -rf $(KERNEL_BUILD_DIR)/tmp
+-	rm -rf $(KERNEL_BUILD_DIR)/root.*
+ 
+ _call_manifest: FORCE

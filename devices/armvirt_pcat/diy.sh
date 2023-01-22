@@ -12,4 +12,6 @@ svn co https://github.com/photonicat/rockchip_rk3568_openwrt/trunk/files files
 
 mv -f $SHELL_FOLDER/network files/etc/config/
 
+sed -i "/KERNEL_BUILD_DIR)\/root/d" devices/common/patches/imagebuilder.patch
+
 
