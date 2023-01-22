@@ -6,6 +6,7 @@ rm -rf package/feeds/kiddin9/{firewall,rtl*,nft-fullcone,fullconenat} package/ke
 
 rm -rf target/imagebuilder
 svn co https://github.com/openwrt/openwrt/branches/openwrt-22.03/target/imagebuilder target/imagebuilder
+sed -i "/libfakeroot/d" target/imagebuilder/Makefile
 
 rm -rf toolchain/musl
 svn co https://github.com/openwrt/openwrt/branches/openwrt-22.03/toolchain/musl toolchain/musl
