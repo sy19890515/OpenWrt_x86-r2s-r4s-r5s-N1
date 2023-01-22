@@ -9,6 +9,7 @@ svn co https://github.com/openwrt/openwrt/branches/openwrt-22.03/target/imagebui
 
 rm -rf toolchain/musl
 svn co https://github.com/openwrt/openwrt/branches/openwrt-22.03/toolchain/musl toolchain/musl
+rm -rf package/system/fstools
 
 svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/package/network/services/fullconenat feeds/kiddin9/fullconenat
 
